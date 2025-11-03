@@ -1,4 +1,3 @@
-Ahmadou Diallo et Aleksandar Lakic
 
 JEU DE FOX AND HOUNDS : DOCUMENTATION
 
@@ -49,4 +48,5 @@ Les joueurs jouent à tour de rôle :
 Le renard se déplace en diagonale dans toutes les directions.
 Les chiens se déplacent uniquement en diagonale vers le bas.
 Le renard gagne s’il atteint la première ligne.
+
 Les chiens gagnent s’ils bloquent totalement le renard.
