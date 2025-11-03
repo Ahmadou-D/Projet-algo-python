@@ -1,4 +1,4 @@
-# Ahmadou Diallo et Aleksandar Lakic
+# Ahmadou Diallo
 
 from foxAndHounds import FoxAndHounds
 
@@ -10,3 +10,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
