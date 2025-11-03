@@ -1,4 +1,3 @@
-# Ahmadou Diallo et Aleksandar Lakic
 
 class Hound:
     def __init__(self, row=0, col=0):
@@ -17,3 +16,4 @@ class Hound:
     def canMove(self, board):
         moves = [(self.row + 1, self.col - 1), (self.row + 1, self.col + 1)]
         return any(self.canMoveTo(board, r, c) for r, c in moves if 0 <= r < board.size and 0 <= c < board.size)
+
