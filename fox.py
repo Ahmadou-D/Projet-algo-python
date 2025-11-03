@@ -1,4 +1,4 @@
-# Ahmadou Diallo et Aleksandar Lakic
+# Ahmadou Diallo
 
 from hound import Hound
 
@@ -14,3 +14,4 @@ class Fox(Hound):
 
     def win(self):
         return self.row == 0
+
