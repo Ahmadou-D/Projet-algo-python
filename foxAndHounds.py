@@ -1,4 +1,4 @@
-# Ahmadou Diallo et Aleksandar Lakic
+# Ahmadou Diallo
 
 from gameBoard import GameBoard
 from hound import Hound
@@ -56,3 +56,4 @@ class FoxAndHounds:
                     turn = "fox"
                 else:
                     print("Déplacement impossible.")
+
