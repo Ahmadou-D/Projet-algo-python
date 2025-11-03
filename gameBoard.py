@@ -1,4 +1,4 @@
-# Ahmadou Diallo et Aleksandar Lakic
+# Ahmadou Diallo
 
 class GameBoard:
     def __init__(self, size):
@@ -36,3 +36,4 @@ class GameBoard:
 
     def set(self, row, col, value):
         self.board[row][col] = value
+
