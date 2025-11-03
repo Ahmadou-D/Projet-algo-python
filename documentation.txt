@@ -1,0 +1,52 @@
+Ahmadou Diallo et Aleksandar Lakic
+
+JEU DE FOX AND HOUNDS : DOCUMENTATION
+
+Classe gameBoard
+Crée et gère le plateau de jeu.
+Le plateau est une grille carrée où les cases vides sont notées 0, le renard est -1 et les chiens sont numérotés de 1 à n/2.
+Si la taille du plateau donnée n’est pas un multiple de 4, elle est automatiquement arrondie au multiple supérieur.
+Méthodes principales :
+__init__(n) : initialise le plateau avec les positions de départ.
+display() : affiche le plateau avec :
+. pour une case vide
+F pour le renard
+un nombre pour chaque chien
+get_case(i, j) : retourne la valeur d’une case.
+set_case(i, j, valeur) : modifie la valeur d’une case.
+
+
+Classe hound
+Représente un pion « chien » contrôlé par le joueur 2.
+Méthodes principales :
+__init__(ligne, colonne) : définit la position du chien.
+canMoveTo(board, ligne, colonne) : vérifie si le déplacement vers une case diagonale vide et vers le bas est possible.
+move(board) : permet au joueur de déplacer son pion en saisissant les coordonnées d’une case valide.
+canMove(board) : indique si le pion peut se déplacer quelque part sur le plateau.
+
+Classe fox
+Représente le pion « renard », contrôlé par le joueur 1.
+C’est une sous-classe de hound, donc elle hérite des mêmes attributs.
+Méthodes principales :
+canMoveTo(board, ligne, colonne) : vérifie si le renard peut aller sur une case diagonale vide (dans toutes les directions).
+win() : retourne True si le renard a atteint la première ligne (victoire).
+
+Classe foxAndHounds
+Gère la partie complète.
+Méthodes principales :
+__init__(n=8) : initialise le plateau, place le renard et les chiens à leurs positions de départ.
+play() : lance une partie complète.
+Le joueur 1 déplace le renard.
+Le joueur 2 choisit un chien et le déplace.
+Après chaque coup, le programme vérifie si le renard a gagné ou s’il ne peut plus bouger (victoire des chiens).
+
+DÉROULEMENT D’UNE PARTIE (main)
+Le programme demande la taille du plateau (multiple de 4).
+Les pions sont placés automatiquement :
+Le renard en bas au centre.
+Les chiens sur la première ligne, une colonne sur deux.
+Les joueurs jouent à tour de rôle :
+Le renard se déplace en diagonale dans toutes les directions.
+Les chiens se déplacent uniquement en diagonale vers le bas.
+Le renard gagne s’il atteint la première ligne.
+Les chiens gagnent s’ils bloquent totalement le renard.
