@@ -8,6 +8,5 @@ def main():
     jeu = FoxAndHounds(taille)
     jeu.play()
 
-if __name__ == "__main__":
-    main()
+
 
