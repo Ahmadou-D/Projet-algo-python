@@ -1,34 +1,20 @@
-Fox and Hounds est un petit jeu de réflexion à deux joueurs développé en Python orienté objet (POO).
-Il s’agit d’une adaptation d’un jeu traditionnel scandinave, conçu pour mettre en pratique les concepts fondamentaux de la programmation orientée objet : encapsulation, héritage et modularité.
+# 🦊 Fox and Hounds - Programmation Orientée Objet
 
-Objectif du jeu
-Deux joueurs s’affrontent sur un plateau carré de taille n×n, où n est un multiple de 4.
-Le Fox (renard) doit atteindre la première ligne pour gagner.
-Les Hounds (chiens de chasse) doivent bloquer totalement le Fox pour remporter la partie.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-Règles du jeu
-Le Fox (symbole F) commence au centre de la dernière ligne.
-Il peut se déplacer en diagonale dans toutes les directions.
-Les Hounds (symboles 1, 2, etc.) commencent sur la première ligne, une colonne sur deux.
-Ils peuvent se déplacer en diagonale uniquement vers le bas.
-Si le Fox atteint la première ligne, il gagne.
-Si les Hounds l’empêchent de bouger, ils gagnent.
+## 📝 Présentation
+Adaptation d'un jeu traditionnel scandinave développée en **Python**. Ce projet a pour but de mettre en pratique les concepts fondamentaux de la **POO** (Programmation Orientée Objet).
 
-Structure du code
-Le projet est organisé en plusieurs fichiers pour une meilleure clarté :
-gameBoard.py → Gère la création et l’affichage du plateau, avec encapsulation (get/set)
-hound.py → Définit la classe des chiens et leurs mouvements
-fox.py → Classe héritée de Hound, adaptée pour les déplacements du renard
-foxAndHounds.py → Contient la logique principale du jeu et la boucle de déroulement
-main.py → Point d’entrée du programme, lance la partie avec la taille du plateau choisie
+## 🧠 Concepts techniques appliqués
+* **Encapsulation** : Contrôle des accès au plateau via des getters et setters.
+* **Héritage et Polymorphisme** : Utilisation d'une classe mère `Hound` dont hérite la classe `Fox`, avec redéfinition des méthodes de mouvement.
+* **Modularité** : Découpage du code en modules distincts (`gameBoard`, `hound`, `fox`, `main`) pour une maintenance facilitée.
 
-Points techniques
-Encapsulation → Les accès au plateau sont contrôlés par des getters et setters.
-Héritage → La classe Fox hérite de Hound et redéfinit certaines méthodes (polymorphisme).
-Vérifications automatiques → Contrôle des déplacements possibles, des bords du plateau et des conditions de victoire.
-Boucle de jeu interactive → Alternance automatique des tours entre Fox et Hounds.
+## 🎮 Règles du jeu
+* **Le Fox (F)** doit atteindre la première ligne du plateau.
+* **Les Hounds (1, 2...)** doivent bloquer totalement le Fox.
+* Le Fox se déplace en diagonale dans toutes les directions, tandis que les Hounds ne peuvent descendre que vers le bas.
 
-Lancement du jeu
-Exécuter main.py
-Choisir la taille du plateau (par défaut : 8×8)
-Le programme affiche le plateau initial et invite les joueurs à jouer à tour de rôle.
+## 🚀 Lancement
+```bash
+python main.py
